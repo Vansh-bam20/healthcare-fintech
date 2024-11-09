@@ -680,9 +680,10 @@ const App = () => {
                   Analysis Dashboard
                 </Typography>
                 <iframe
-                  width="1080"
-                  height="760"
-                  src="https://community.fabric.microsoft.com/t5/Data-Stories-Gallery/Crypto-Tracker-Dashboard/td-p/4274216"
+                  title="Fintech_project"
+                  width="1140"
+                  height="541.25"
+                  src="https://app.powerbi.com/reportEmbed?reportId=cd6fd987-b347-49f9-859e-af46384c307d&autoAuth=true&ctid=7c21bd5f-12e7-4869-9a23-9ad39d684f76"
                   frameborder="0"
                   allowFullScreen="true"
                 ></iframe>
