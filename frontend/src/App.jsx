@@ -142,7 +142,7 @@ function App() {
           sx={{
             p: 4,
             textAlign: "center",
-            backgroundImage: "url(src/assets/home_icon.png)",
+            backgroundImage: "url(/home_icon.png)",
             backgroundSize: "cover",
             backgroundPosition: "center",
             height: "100vh",
