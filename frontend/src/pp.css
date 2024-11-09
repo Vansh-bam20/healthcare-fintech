@@ -1,0 +1,119 @@
+/* App.css */
+
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #677c9c;
+  color: #333;
+}
+
+h4 {
+  color: #00796b;
+  font-weight: 700;
+}
+
+.MuiPaper-root {
+  background-color: #ffffff;
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the dropdown and table */
+.MuiFormControl-root {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.MuiSelect-select {
+  padding: 10px;
+}
+
+.MuiTable-root {
+  margin-top: 1rem;
+}
+
+.MuiTableHead-root {
+  background-color: #00796b;
+}
+
+.MuiTableCell-root {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.MuiTableBody-root .MuiTableRow-root:hover {
+  background-color: #e3f2fd;
+}
+
+.MuiTableCell-body {
+  color: #333;
+}
+
+a {
+  color: #00796b;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+/* Customize typography */
+h4 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #00796b;
+  text-align: center;
+}
+
+/* Styling for dropdown select */
+.MuiInputBase-root {
+  border-radius: 8px;
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+}
+
+/* Search container styling */
+.search-bar-container {
+  margin-bottom: 20px;
+}
+
+/* Improved table look */
+.MuiTableContainer-root {
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Improve table header row color */
+.MuiTableHead-root {
+  background-color: #00796b;
+}
+
+.MuiTableCell-root {
+  padding: 10px;
+}
+
+.MuiTableBody-root .MuiTableRow-root:hover {
+  background-color: #f1f1f1;
+}
+
+/* Styling for links */
+a.MuiLink-root {
+  color: #00796b;
+  font-weight: 500;
+}
+
+a.MuiLink-root:hover {
+  color: #004d40;
+  text-decoration: underline;
+}
