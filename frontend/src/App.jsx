@@ -22,7 +22,7 @@ import {
 } from "@mui/material";
 import { Link as ScrollLink, Element, scroller } from "react-scroll";
 import { Accordion, AccordionSummary, AccordionDetails } from "@mui/material";
-import ExpandMoreIcon from "@mui/icons-material";
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import hospitalData from "../healthcare_hospital_data.json";
 
 // Preprocess the data: convert price strings into arrays of [lower, upper]
