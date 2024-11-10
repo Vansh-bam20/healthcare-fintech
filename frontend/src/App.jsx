@@ -27,6 +27,7 @@ import { Link as ScrollLink, Element, scroller } from "react-scroll";
 import { Accordion, AccordionSummary, AccordionDetails } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import hospitalData from "../healthcare_hospital_data.json";
+import { Typed } from "react-typed";
 
 // Preprocess the data: convert price strings into arrays of [lower, upper]
 const preprocessData = (data) => {
@@ -94,7 +95,7 @@ function Navbar() {
     <AppBar position="static" sx={{ backgroundColor: "#003366" }}>
       <Toolbar>
         <Typography variant="h6" sx={{ flexGrow: 1, fontWeight: "700" }}>
-          Medicost
+          Medcost
         </Typography>
         {["Home", "Price", "Reviews", "Insurance", "About Us", "Dashboard"].map(
           (section) => (
@@ -151,6 +152,21 @@ const App = () => {
   const [selectedTest, setSelectedTest] = useState("MRI");
   const [selectedInsurance, setSelectedInsurance] = useState("Life Insurance");
   const [insuranceHospitals, setInsuranceHospitals] = useState([]);
+
+  const [typewriterText, setTypewriterText] = useState("");
+  const textToType = "Smart Healthcare Decisions ";
+  const typingSpeed = 80;
+
+  useEffect(() => {
+    let index = 0;
+    const typeInterval = setInterval(() => {
+      setTypewriterText((prev) => textToType.slice(0, index + 1));
+      index++;
+      if (index >= textToType.length) clearInterval(typeInterval);
+    }, typingSpeed);
+
+    return () => clearInterval(typeInterval);
+  }, []);
 
   const handleTestChange = (event) => {
     setSelectedTest(event.target.value);
@@ -260,14 +276,13 @@ const App = () => {
                 >
                   <Box sx={{ color: "white", pr: 4 }}>
                     <Typography variant="h2" gutterBottom>
-                      Smart Healthcare
+                      {typewriterText}
                       <Typography
                         component="span"
                         variant="h2"
                         sx={{ color: theme.palette.primary.main }}
                       >
                         {" "}
-                        Decisions
                       </Typography>
                     </Typography>
                     <Typography
@@ -304,15 +319,27 @@ const App = () => {
                 <Grid item xs={12} md={6}>
                   <Box
                     component="img"
-                    src="/homepage_photo.jpg" // Replace with your image path
+                    src="/image-removebg.png" // Replace with your image path
                     alt="Healthcare Professional"
                     sx={{
                       width: "100%",
                       maxWidth: 600,
                       height: "auto",
                       borderRadius: 2,
-                      // boxShadow: "0 4px 20px rgba(0,0,0,0.25)",
                       padding: 11,
+                      boxShadow: "0 10px 30px rgba(0, 0, 0, 0.1)", // Light shadow for floating effect
+                      animation: "floatRotate 8s ease-in-out infinite", // Combined float and rotate animation
+                      "@keyframes floatRotate": {
+                        "0%": {
+                          transform: "translateY(0) rotate(0deg)", // Start position
+                        },
+                        "50%": {
+                          transform: "translateY(-10px) rotate(5deg)", // Midpoint float and slight rotation
+                        },
+                        "100%": {
+                          transform: "translateY(0) rotate(0deg)", // Back to start position
+                        },
+                      },
                     }}
                   />
                 </Grid>
