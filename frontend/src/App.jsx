@@ -199,7 +199,7 @@ const App = () => {
                 fontWeight: "bold",
               }}
             >
-              MEDICOST
+              MedCost Insight
             </Typography>
             <Button
               color="inherit"
@@ -733,7 +733,7 @@ const App = () => {
               <Grid container spacing={6}>
                 <Grid item xs={12} md={6}>
                   <Typography variant="h3" gutterBottom>
-                    About MediCost
+                    About MedCost Insight
                   </Typography>
                   <Typography
                     variant="h6"
@@ -758,7 +758,7 @@ const App = () => {
                     <Grid container spacing={3}>
                       <Grid item xs={6}>
                         <Typography variant="h4" color="primary" gutterBottom>
-                          500+
+                          5+
                         </Typography>
                         <Typography
                           variant="body1"
@@ -769,13 +769,13 @@ const App = () => {
                       </Grid>
                       <Grid item xs={6}>
                         <Typography variant="h4" color="primary" gutterBottom>
-                          50K+
+                          Happy Customers
                         </Typography>
                         <Typography
                           variant="body1"
                           sx={{ color: "rgba(255,255,255,0.7)" }}
                         >
-                          Happy Patients
+                          
                         </Typography>
                       </Grid>
                     </Grid>
